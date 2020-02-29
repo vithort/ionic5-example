@@ -12,6 +12,16 @@
 > ionic serve
 
 
+# Criando Páginas
+
+> ionic g page pages/inicio
+> 
+> ionic g page pages/alert --spec=false
+> 
+> ionic g page pages/action-sheet --spec=false
+
+
+
 # Ciclo de Vida Ionic
 
 - ionViewDidLoad: Disparado somente quando uma visão é armazenada na memória. Este evento NÃO é disparado ao entrar em uma exibição que já está em cache. É um bom lugar para tarefas relacionadas ao init.
