@@ -14,6 +14,7 @@ export class ActionSheetPage implements OnInit {
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Albums',
+      backdropDismiss: false, // somente cancela agora se clicar no botao cancelar
       buttons: [
         {
           text: 'Delete',
@@ -32,7 +33,7 @@ export class ActionSheetPage implements OnInit {
         },
         {
           text: 'Play (open modal)',
-          icon: 'arrow-dropright-circle',
+          icon: 'play-outline',
           handler: () => {
             console.log('Play clicked');
           }
