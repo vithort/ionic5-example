@@ -6,12 +6,22 @@ import { ActionSheetPage } from './action-sheet.page';
 const routes: Routes = [
   {
     path: '',
-    component: ActionSheetPage
+    component: ActionSheetPage,
+    children: [
+      {
+        path: 'alert',
+        loadChildren: '../alert/alert.module#AlertPageModule'
+      },
+      {
+        path: 'inicio',
+        loadChildren: '../inicio/inicio.module#InicioPageModule'
+      }
+    ]
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class ActionSheetPageRoutingModule {}

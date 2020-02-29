@@ -85,6 +85,20 @@ _`./src/app/components/components.module.ts`_
 > ]
 
 
+## Criando Rotas
+
+_`./src/app/pages/action-sheet/action-sheet-routing.module.ts`_
+
+> ...
+> children: [
+>   {
+>       path: 'alert',
+>       loadChildren: '../alert/alert.module#AlertPageModule'
+>   }
+> ]
+> ...
+
+
 
 # Ciclo de Vida Ionic
 
