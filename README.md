@@ -72,6 +72,17 @@
 > ]
 
 
+## Para que os elementos Ionic funcionem no Componente, é necessário importar os mesmos
+
+_`./src/app/components/components.module.ts`_
+
+> import { IonicModule } from '@ionic/angular';
+
+> imports: [
+>   ...
+>   IonicModule
+>   ...
+> ]
 
 
 
