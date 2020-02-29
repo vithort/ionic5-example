@@ -28,7 +28,9 @@
 > ionic g component components/header --spec=false
 
 
-Obs: Sempre que criar componentes, importar:
+## Ao criar componentes devemos...
+
+### Importar em...
 
 - No: _`./src/app/app.module.ts`_
 
@@ -50,6 +52,25 @@ Obs: Sempre que criar componentes, importar:
 >   ComponentsModule
 >   ...    
 > ]
+
+
+### E...
+
+- Declarar e Exportar em: _`./src/app/components/components.module.ts`_
+
+> import { HeaderComponent } from './header/header.component';
+
+> declarations: [
+>   ...
+>   HeaderComponent
+>   ...
+> ],
+> exports: [
+>   ...
+>   HeaderComponent
+>   ...
+> ]
+
 
 
 
