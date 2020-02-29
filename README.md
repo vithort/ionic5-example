@@ -21,6 +21,38 @@
 > ionic g page pages/action-sheet --spec=false
 
 
+# Criando Módulos e Componentes
+
+> ionic g module components
+> 
+> ionic g component components/header --spec=false
+
+
+Obs: Sempre que criar componentes, importar:
+
+- No: _`./src/app/app.module.ts`_
+
+> import { ComponentsModule } from './components/components.module';
+  
+> imports: [
+>   ...
+>   ComponentsModule
+>   ...    
+> ]
+
+
+- Nas páginas que vão utilizar: _`./src/app/pages/alert/alert.module.ts`_
+
+> import { ComponentsModule } from './components/components.module';
+  
+> imports: [
+>   ...
+>   ComponentsModule
+>   ...    
+> ]
+
+
+
 
 # Ciclo de Vida Ionic
 
