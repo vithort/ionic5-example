@@ -19,6 +19,8 @@
 > ionic g page pages/alert --spec=false
 > 
 > ionic g page pages/action-sheet --spec=false
+> 
+> ionic g page pages/cards --spec=false
 
 
 # Criando Módulos e Componentes
