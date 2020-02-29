@@ -21,7 +21,8 @@
 > ionic g page pages/action-sheet --spec=false
 > 
 > ionic g page pages/cards --spec=false
-
+> 
+> ionic g page pages/datas --spec=false
 
 # Criando Módulos e Componentes
 
