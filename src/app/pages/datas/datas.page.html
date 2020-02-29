@@ -9,7 +9,15 @@
     </ion-item>
     <ion-item>
       <ion-label>Data Simples</ion-label>
-      <ion-datetime placeholder="Data" value="{{dataAtual | date:'yyyy-MM-dd'}}" displayFormat="DD/MM/YYYY"></ion-datetime>
+      <ion-datetime
+      placeholder="Data"
+      value="{{dataAtual | date:'yyyy-MM-dd'}}"
+      displayFormat="DD/MM/YYYY"
+      cancelText="Cancelar"
+      doneText="Ok"
+      [(ngModel)]="dataAtual"
+      (ionChange)="trocarData($event)"
+      ></ion-datetime>
     </ion-item>
   </ion-list>
 

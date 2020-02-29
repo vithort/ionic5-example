@@ -11,4 +11,8 @@ export class DatasPage implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  trocarData(novaData) {
+    console.log('ionChange', novaData)
+  }
 }
