@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
   componentes: Componente[] = [
     {
-      icone: 'imagem',
+      icone: 'alert',
       nome: 'Alerta',
       link: '/alert'
     },
     {
-      icone: 'imagem',
+      icone: 'chatbox-outline',
       nome: 'Abas',
       link: '/action-sheet'
     },
