@@ -4,8 +4,12 @@
 
   <ion-list>
     <ion-item>
-      <ion-label>MMMM</ion-label>
+      <ion-label>Mês</ion-label>
       <ion-datetime displayFormat="MMMM" value="2012-12-15T13:47:20.789"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Data Simples</ion-label>
+      <ion-datetime placeholder="Data" value="{{dataAtual | date:'yyyy-MM-dd'}}" displayFormat="DD/MM/YYYY"></ion-datetime>
     </ion-item>
   </ion-list>
 
