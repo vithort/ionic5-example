@@ -49,6 +49,7 @@ export class ActionSheetPage implements OnInit {
           text: 'Cancel',
           icon: 'close',
           role: 'cancel',
+          cssClass: 'vermelho',
           handler: () => {
             console.log('Cancel clicked');
           }
