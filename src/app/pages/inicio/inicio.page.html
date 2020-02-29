@@ -4,8 +4,8 @@
 
   <!-- List of Text Items -->
   <ion-list>
-    <ion-item routerLink="/" detail>
-      <ion-label>Pokémon Yellow</ion-label>
+    <ion-item *ngFor="let c of componentes" [routerLink]="c.link" detail>
+      <ion-label>{{ c.nome }}</ion-label>
     </ion-item>
   </ion-list>
 
