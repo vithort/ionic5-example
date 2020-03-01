@@ -6,11 +6,12 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item>Menu Item 1</ion-item>
-      <ion-item>Menu Item 2</ion-item>
-      <ion-item>Menu Item 3</ion-item>
-      <ion-item>Menu Item 4</ion-item>
-      <ion-item>Menu Item 5</ion-item>
+      <ion-menu-toggle>
+      <ion-item *ngFor="let c of componentes | async" [routerLink]="c.link">
+        <ion-icon slot="start" [name]="c.icone"></ion-icon>
+        <ion-label>{{ c.nome }}</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
     </ion-list>
   </ion-content>
 </ion-menu>
