@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button>
-
+      <!-- pode chamar desses dois jeitos, assim: -->
+      <!--
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
       </ion-button>
+      -->
+      <!-- ou assim: -->
+      <ion-menu-button color="primary" menu="first"> </ion-menu-button>
     </ion-buttons>
 
     <ion-title text-capitalize>Início</ion-title>
