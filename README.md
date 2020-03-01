@@ -23,6 +23,9 @@
 > ionic g page pages/cards --spec=false
 > 
 > ionic g page pages/datas --spec=false
+> 
+> ionic g page pages/grids --spec=false
+
 
 # Criando Módulos e Componentes
 

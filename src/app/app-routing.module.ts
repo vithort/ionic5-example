@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'datas',
     loadChildren: () => import('./pages/datas/datas.module').then( m => m.DatasPageModule)
   },
+  {
+    path: 'grids',
+    loadChildren: () => import('./pages/grids/grids.module').then( m => m.GridsPageModule)
+  },
 
 
 ];

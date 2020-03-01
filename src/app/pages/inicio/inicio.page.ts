@@ -26,6 +26,11 @@ export class InicioPage implements OnInit {
       icone: 'calendar-outline',
       nome: 'Datas',
       link: '/datas'
+    },
+    {
+      icone: 'grid-outline',
+      nome: 'Grids',
+      link: '/grids'
     }
   ];
 
