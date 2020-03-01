@@ -33,5 +33,10 @@
         "icone": "code-slash-outline",
         "nome": "Slides",
         "link": "/slides"
-    }    
+    },
+    {
+        "icone": "chatbox-outline",
+        "nome": "Toast",
+        "link": "/toast"
+    }
 ]

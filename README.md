@@ -29,6 +29,9 @@
 > ionic g page pages/input --spec=false
 > 
 > ionic g page pages/slides --spec=false
+> 
+> ionic g page pages/toast --spec=false
+
 
 # Criando Módulos e Componentes
 
