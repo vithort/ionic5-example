@@ -109,6 +109,23 @@ _`./src/app/pages/action-sheet/action-sheet-routing.module.ts`_
 > ...
 
 
+# Criando Serviços
+
+> ionic g service services/data --spec=false
+
+
+## Importar HttpClient no app.module.ts
+
+_`./src/app/app.module.ts`_
+
+> import { HttpClientModule } from '@angular/common/http';
+  
+> imports: [
+>   ...
+>   HttpClientModule
+>   ...    
+> ]
+
 
 # Ciclo de Vida Ionic
 
