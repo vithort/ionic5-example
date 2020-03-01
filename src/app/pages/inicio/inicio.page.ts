@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Componente } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-inicio',
@@ -18,10 +19,4 @@ export class InicioPage implements OnInit {
   toggleMenu() {
     this.menu.toggle();
   }
-}
-
-interface Componente {
-  icone: string;
-  nome: string;
-  link: string;
 }
