@@ -28,5 +28,10 @@
         "icone": "albums-outline",
         "nome": "Inputs",
         "link": "/input"
-    }
+    },
+    {
+        "icone": "code-slash-outline",
+        "nome": "Slides",
+        "link": "/slides"
+    }    
 ]
