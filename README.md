@@ -34,6 +34,8 @@
 > ionic g module components
 > 
 > ionic g component components/header --spec=false
+> 
+> ionic g component components/menu --spec=false
 
 
 ## Ao criar componentes devemos...
