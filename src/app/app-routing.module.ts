@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'grids',
     loadChildren: () => import('./pages/grids/grids.module').then( m => m.GridsPageModule)
   },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
 
 
 ];

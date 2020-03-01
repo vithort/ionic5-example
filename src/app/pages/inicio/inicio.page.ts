@@ -31,6 +31,11 @@ export class InicioPage implements OnInit {
       icone: 'grid-outline',
       nome: 'Grids',
       link: '/grids'
+    },
+    {
+      icone: 'albums-outline',
+      nome: 'Inputs',
+      link: '/input'
     }
   ];
 
