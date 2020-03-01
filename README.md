@@ -1,5 +1,12 @@
 # ionic5-example
- Aplicativos Híbridos com Ionic 5
+Aplicativos Híbridos com Ionic 5
+
+
+# Instalação do Ionic
+
+> npm install -g @ionic/cli
+> 
+> npm i -g cordova
 
 
 # Criar Aplicação
@@ -144,3 +151,12 @@ _`./src/app/app.module.ts`_
 - ionViewDidLeave: Despedido quando você sai de uma página, depois que ela deixa de ser a ativa. Semelhante ao anterior.
 
 - ionViewWillUnload: Disparado quando uma exibição será completamente removida (depois de deixar uma exibição não armazenada em cache).
+
+
+# Verificar:
+
+- Build do App
+
+- Gerar APK
+
+- Testar App
