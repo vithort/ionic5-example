@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import { Componente } from '../../interfaces/interfaces';
+import { Observable } from 'rxjs';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-inicio',
@@ -8,13 +10,16 @@ import { Componente } from '../../interfaces/interfaces';
   styleUrls: ['./inicio.page.scss']
 })
 export class InicioPage implements OnInit {
-  componentes: Componente[] = [];
+  componentes: Observable<Componente[]>;
 
   constructor(
-    private menu: MenuController
+    private menu: MenuController,
+    private dataService: DataService
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.componentes = this.dataService.getMenu();
+  }
 
   toggleMenu() {
     this.menu.toggle();

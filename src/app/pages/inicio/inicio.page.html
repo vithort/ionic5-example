@@ -11,7 +11,7 @@
       <ion-menu-button color="primary" menu="first"> </ion-menu-button>
     </ion-buttons>
 
-    <ion-title text-capitalize>Início</ion-title>
+    <ion-title text-capitalize color="primary">Início</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,8 +19,8 @@
 
   <!-- List of Text Items -->
   <ion-list>
-    <ion-item *ngFor="let c of componentes" [routerLink]="c.link" detail>
-      <ion-icon [name]="c.icone" slot="start"></ion-icon>
+    <ion-item *ngFor="let c of componentes | async" [routerLink]="c.link" detail>
+      <ion-icon [name]="c.icone" slot="start" color="primary"></ion-icon>
       <ion-label>{{ c.nome }}</ion-label>
     </ion-item>
   </ion-list>

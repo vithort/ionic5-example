@@ -17,6 +17,8 @@ import { ComponentsModule } from '../../components/components.module';
     InicioPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [InicioPage]
+  declarations: [
+    InicioPage
+  ]
 })
 export class InicioPageModule {}
